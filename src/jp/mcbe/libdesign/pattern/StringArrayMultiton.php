@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace jp\mcbe\libdesign_pattern;
+namespace jp\mcbe\libdesign\pattern;
 
 /**
  * Trait StringArrayMultiton
- * @package jp\mcbe\libdesign_pattern
+ * @package jp\mcbe\libdesign\pattern
  */
 trait StringArrayMultiton {
 

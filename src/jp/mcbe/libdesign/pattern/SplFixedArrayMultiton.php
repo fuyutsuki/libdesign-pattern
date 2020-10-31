@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace jp\mcbe\libdesign_pattern;
+namespace jp\mcbe\libdesign\pattern;
 
 use SplFixedArray;
 
 /**
  * Trait SplFixedArrayMultiton
- * @package jp\mcbe\libdesign_pattern
+ * @package jp\mcbe\libdesign\pattern
  */
 trait SplFixedArrayMultiton {
 

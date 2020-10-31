@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace jp\mcbe\libdesign_pattern;
+namespace jp\mcbe\libdesign\pattern;
 
 /**
  * Trait Singleton
- * @package jp\mcbe\libdesign_pattern
+ * @package jp\mcbe\libdesign\pattern
  */
 trait Singleton {
 
