@@ -1,0 +1,6 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/fuyutsuki/libdesign-pattern
+build-by-default: true
+branches:
+- master
+projects: []
+...
