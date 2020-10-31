@@ -1,0 +1,13 @@
+{
+    "name": "fuyutsuki/libdesign-pattern",
+    "description": "Virion library that provides design-pattern traits",
+    "type": "project",
+    "license": "NCSA",
+    "authors": [
+        {
+            "name": "yuko fuyutsuki",
+            "email": "yukofuyutsuki@gmail.com"
+        }
+    ],
+    "require": {}
+}
