@@ -2,6 +2,10 @@
 
 Virion library that provides design-pattern traits.
 
+### Requirement
+
+- PHP >= 7.4
+
 ### Installation
 
 #### Composer:
