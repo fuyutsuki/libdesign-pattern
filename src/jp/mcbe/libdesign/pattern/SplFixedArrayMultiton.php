@@ -22,6 +22,10 @@ trait SplFixedArrayMultiton {
 		self::$instances[$key] = $this;
 	}
 
+	/**
+	 * @param int $key
+	 * @return static|null
+	 */
 	final public static function getInstance(int $key): ?self {
 		return self::$instances[$key];
 	}
