@@ -14,15 +14,15 @@ trait IntArrayMultiton {
 	protected static array $instances = [];
 
 	final public function __construct(int $key) {
-		self::$instances[$key] = $this;
+		static::$instances[$key] = $this;
 	}
 
 	/**
 	 * @param int $key
 	 * @return static|null
 	 */
-	final public static function getInstance(int $key): ?self {
-		return self::$instances[$key] ?? null;
+	final public static function getInstance(int $key): ?static {
+		return static::$instances[$key] ?? null;
 	}
 
 }
