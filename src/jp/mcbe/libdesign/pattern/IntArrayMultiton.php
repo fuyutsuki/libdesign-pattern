@@ -11,7 +11,7 @@ namespace jp\mcbe\libdesign\pattern;
 trait IntArrayMultiton {
 
 	/** @var static[] */
-	protected static array $instances = [];
+	protected static $instances = [];
 
 	final public function __construct(int $key) {
 		self::$instances[$key] = $this;

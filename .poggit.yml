@@ -2,6 +2,7 @@
 build-by-default: true
 branches:
 - master
+- dev/0.1-php7.3
 projects:
   libdesign-pattern:
     path: ""
