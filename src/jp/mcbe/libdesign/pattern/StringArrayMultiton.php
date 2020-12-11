@@ -25,4 +25,8 @@ trait StringArrayMultiton {
 		return static::$instances[$key] ?? null;
 	}
 
+	final public static function removeInstance(string $key) {
+		unset(static::$instances[$key]);
+	}
+
 }
