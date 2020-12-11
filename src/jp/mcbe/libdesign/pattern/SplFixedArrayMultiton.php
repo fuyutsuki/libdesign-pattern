@@ -12,7 +12,7 @@ use SplFixedArray;
  */
 trait SplFixedArrayMultiton {
 
-	protected static SplFixedArray $instances;
+	protected static $instances;
 
 	final public static function init(int $size) {
 		self::$instances = new SplFixedArray($size);

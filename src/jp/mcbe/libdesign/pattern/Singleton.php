@@ -11,7 +11,7 @@ namespace jp\mcbe\libdesign\pattern;
 trait Singleton {
 
 	/** @var static|null $instance */
-	protected static ?self $instance;
+	protected static $instance;
 
 	final public function __construct() {
 		self::$instance = $this;

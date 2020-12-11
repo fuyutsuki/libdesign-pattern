@@ -1,6 +1,6 @@
 name: libdesign-pattern
 antigen: jp\mcbe\libdesign\pattern
 version: 0.2.0
-php: 7.4
+php: 7.3
 author: yuko fuyutsuki
 description: Virion library that provides design-pattern traits
