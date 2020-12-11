@@ -25,4 +25,8 @@ trait IntArrayMultiton {
 		return self::$instances[$key] ?? null;
 	}
 
+	final public static function removeInstance(int $key) {
+		unset(self::$instances[$key]);
+	}
+
 }

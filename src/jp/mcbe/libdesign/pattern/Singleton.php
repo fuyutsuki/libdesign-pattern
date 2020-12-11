@@ -10,8 +10,8 @@ namespace jp\mcbe\libdesign\pattern;
  */
 trait Singleton {
 
-	/** @var static $instance */
-	protected static self $instance;
+	/** @var static|null $instance */
+	protected static ?self $instance;
 
 	final public function __construct() {
 		self::$instance = $this;
@@ -22,6 +22,10 @@ trait Singleton {
 	 */
 	final public static function getInstance(): ?self {
 		return self::$instance ?? null;
+	}
+
+	final public static function removeInstance() {
+		self::$instance = null;
 	}
 
 }

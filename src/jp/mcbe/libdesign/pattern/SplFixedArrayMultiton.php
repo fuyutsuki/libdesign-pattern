@@ -30,4 +30,8 @@ trait SplFixedArrayMultiton {
 		return self::$instances[$key];
 	}
 
+	final public static function removeInstance(int $key) {
+		unset(self::$instances[$key]);
+	}
+
 }

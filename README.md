@@ -28,6 +28,6 @@ projects:
     icon: ""
     libs:
       - src: fuyutsuki/libdesign-pattern/libdesign-pattern
-        version: 0.1.0
+        version: 0.2.0
 ...
 ```
