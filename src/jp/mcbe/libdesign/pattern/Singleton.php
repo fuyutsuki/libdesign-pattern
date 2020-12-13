@@ -14,18 +14,18 @@ trait Singleton {
 	protected static ?self $instance;
 
 	final public function __construct() {
-		self::$instance = $this;
+		static::$instance = $this;
 	}
 
 	/**
 	 * @return static|null
 	 */
 	final public static function getInstance(): ?self {
-		return self::$instance ?? null;
+		return static::$instance ?? null;
 	}
 
 	final public static function removeInstance() {
-		self::$instance = null;
+		static::$instance = null;
 	}
 
 }

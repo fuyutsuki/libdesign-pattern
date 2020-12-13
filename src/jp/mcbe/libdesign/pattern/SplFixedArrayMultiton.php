@@ -15,11 +15,11 @@ trait SplFixedArrayMultiton {
 	protected static SplFixedArray $instances;
 
 	final public static function init(int $size) {
-		self::$instances = new SplFixedArray($size);
+		static::$instances = new SplFixedArray($size);
 	}
 
 	final public function __construct(int $key) {
-		self::$instances[$key] = $this;
+		static::$instances[$key] = $this;
 	}
 
 	/**
@@ -27,11 +27,11 @@ trait SplFixedArrayMultiton {
 	 * @return static|null
 	 */
 	final public static function getInstance(int $key): ?self {
-		return self::$instances[$key];
+		return static::$instances[$key];
 	}
 
 	final public static function removeInstance(int $key) {
-		unset(self::$instances[$key]);
+		unset(static::$instances[$key]);
 	}
 
 }

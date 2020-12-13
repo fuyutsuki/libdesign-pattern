@@ -14,7 +14,7 @@ trait IntArrayMultiton {
 	protected static array $instances = [];
 
 	final public function __construct(int $key) {
-		self::$instances[$key] = $this;
+		static::$instances[$key] = $this;
 	}
 
 	/**
@@ -22,11 +22,11 @@ trait IntArrayMultiton {
 	 * @return static|null
 	 */
 	final public static function getInstance(int $key): ?self {
-		return self::$instances[$key] ?? null;
+		return static::$instances[$key] ?? null;
 	}
 
 	final public static function removeInstance(int $key) {
-		unset(self::$instances[$key]);
+		unset(static::$instances[$key]);
 	}
 
 }
