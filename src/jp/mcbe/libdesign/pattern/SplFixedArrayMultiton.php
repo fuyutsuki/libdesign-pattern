@@ -26,7 +26,7 @@ trait SplFixedArrayMultiton {
 	 * @param int $key
 	 * @return static|null
 	 */
-	final public static function getInstance(int $key): ?self {
+	final public static function getInstance(int $key): ?static {
 		return static::$instances[$key];
 	}
 

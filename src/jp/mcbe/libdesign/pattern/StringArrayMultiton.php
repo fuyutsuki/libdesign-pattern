@@ -21,7 +21,7 @@ trait StringArrayMultiton {
 	 * @param string $key
 	 * @return static|null
 	 */
-	final public static function getInstance(string $key): ?self {
+	final public static function getInstance(string $key): ?static {
 		return static::$instances[$key] ?? null;
 	}
 

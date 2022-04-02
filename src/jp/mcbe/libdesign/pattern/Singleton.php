@@ -20,7 +20,7 @@ trait Singleton {
 	/**
 	 * @return static|null
 	 */
-	final public static function getInstance(): ?self {
+	final public static function getInstance(): ?static {
 		return static::$instance ?? null;
 	}
 
