@@ -4,7 +4,7 @@ Virion library that provides design-pattern traits.
 
 ### Requirement
 
-- PHP >= 7.4
+- PHP >= 8.0
 
 ### Installation
 
@@ -28,6 +28,6 @@ projects:
     icon: ""
     libs:
       - src: fuyutsuki/libdesign-pattern/libdesign-pattern
-        version: 0.2.0
+        version: 1.0.0
 ...
 ```
